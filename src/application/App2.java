@@ -19,7 +19,9 @@ public class App2 {
 
         System.out.println("=== TEST 2: department findAll ===");
         List<Department> list = departmentDao.findAll();
-        System.out.println(list);
+        for (Department obj : list) {
+            System.out.println(obj);
+        }
         System.out.println();
 
         System.out.println("=== TEST 3: department insert ===");
